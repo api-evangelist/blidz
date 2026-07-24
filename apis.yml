@@ -1,8 +1,6 @@
 aid: blidz
 name: Blidz
-description: 'Blidz is a company surfaced as a portfolio company of general-catalyst and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Blidz is a membership-based social and gamified e-commerce platform ("Make Money, Save Money, Have Fun") offering deeply discounted deals across grocery, electronics, home goods, and other consumer categories through its iOS and Android shopping apps. Backed by General Catalyst, Blidz operates a consumer mobile marketplace rather than a public developer platform; as of this profile it publishes no developer portal, API documentation, or public API surface. This APIs.json profile captures the company identity and the security posture of its public web domain.'
 url: https://raw.githubusercontent.com/api-evangelist/blidz/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +8,52 @@ x-backed-by:
 - general-catalyst
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- E-commerce
+- Shopping
+- Marketplace
+- Mobile
+- Retail
+image: https://blidz.com/favicon.ico
 apis: []
+common:
+- type: DomainSecurity
+  url: security/blidz-domain-security.yml
+- type: Website
+  url: https://blidz.com
+- type: HelpCenter
+  url: https://intercom.help/blidz/en/collections/3847845-blidz-membership
+- type: Blog
+  url: https://blog.blidz.com
+- type: TermsOfService
+  url: https://blidz.com/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://blidz.com/legal/privacy-policy
+- type: Login
+  url: https://blidz.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
